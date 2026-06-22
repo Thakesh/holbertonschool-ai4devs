@@ -1,53 +1,52 @@
 # Bug Descriptions
 
-## bug1.py
+## Bug 1 – bug1.py
 
-**Type:** Syntax Error
+**Intended Behavior**: Calculate and return the average value of a list of numbers.
 
-**Intended Behavior:**
-The program should define a function that accepts a user's name and prints a greeting message such as "Hello, Alice".
+**Issue Type**: Syntax error.
 
----
-
-## bug2.js
-
-**Type:** Logical Error
-
-**Intended Behavior:**
-The function should apply a 10% discount to prices greater than 100 and return the reduced price.
+**Notes**: The function call at the end of the file contains a missing closing parenthesis.
 
 ---
 
-## bug3.py
+## Bug 2 – bug2.js
 
-**Type:** Runtime Exception
+**Intended Behavior**: Apply a percentage discount to a product price and return the discounted amount.
 
-**Intended Behavior:**
-The program should print every element in the list exactly once without causing an error.
+**Issue Type**: Logical error.
 
----
-
-## bug4.java
-
-**Type:** Off-by-One Error
-
-**Intended Behavior:**
-The program should iterate through the array and print all values from the first element to the last element exactly once.
+**Notes**: The function adds the discount to the price instead of subtracting it.
 
 ---
 
-## bug5.py
+## Bug 3 – bug3.py
 
-**Type:** Data Type Misuse
+**Intended Behavior**: Search for a user by name and display the user's information if found.
 
-**Intended Behavior:**
-The program should add 5 years to the user's age and print the resulting numeric value.
+**Issue Type**: Runtime exception.
+
+**Notes**: The code attempts to access a property on a `None` value when the user does not exist.
 
 ---
 
-## bug6.js
+## Bug 4 – bug4.java
 
-**Type:** Library/API Misuse
+**Intended Behavior**: Calculate and display the total of all values stored in an array.
 
-**Intended Behavior:**
-The program should parse a JSON string, retrieve the user's name, convert it to uppercase, and print it.
+**Issue Type**: Off-by-one / loop logic error.
+
+**Notes**: The loop iterates one position beyond the last valid array index.
+
+---
+
+## Bug 5 – bug5.js
+
+**Intended Behavior**: Parse user data from JSON, calculate the user's age next year, and display the user's name in uppercase.
+
+**Issue Type**: Data type and library misuse.
+
+**Notes**:
+
+* String concatenation is performed instead of numeric addition.
+* The object property name uses incorrect capitalization (`Name` instead of `name`).
